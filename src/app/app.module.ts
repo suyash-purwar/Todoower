@@ -7,13 +7,15 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { TodoComponent } from './todo/todo.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TodoComponent
+    TodoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,6 @@ export class TodoComponent implements OnInit {
   }
 
   onRemoveTodo(id: number) {
-    console.log(id);
     if (id === 0){
       this.todos.splice(id, ++id)
     } else {

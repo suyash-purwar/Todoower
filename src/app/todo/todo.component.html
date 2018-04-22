@@ -30,8 +30,8 @@
 
 <div class="row" *ngIf="todos.length !== 0">
   <div class = "col s12">
-    <ul class = "collection">
-		<li
+    <ul class = "collection" style = "margin-bottom: 100px">
+    <li
        class = "collection-item"
        *ngFor = "let todo of todos; let i = index">{{todo}}
         <a class = "secondary-content" (click) = "onRemoveTodo(i)" href = "#!">

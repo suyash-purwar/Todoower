@@ -14,10 +14,11 @@ export class TodoComponent implements OnInit {
   }
 
   onRemoveTodo(id: number) {
+    console.log(id)
     if (id === 0){
       this.todos.splice(id, ++id)
     } else {
-      this.todos.splice(id, id);
+      this.todos.splice(id, 1);
     }
   }
   constructor() { }

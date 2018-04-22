@@ -1,0 +1,43 @@
+<div class = "row">
+  <div class = "col s12">
+    <div class = "input-feild">
+      <h5 class = "center">Add todo</h5>
+      <input
+       type = "text"
+       class = "validate"
+       placeholder="Add todo"
+       [(ngModel)] = "data">
+    </div>
+  </div>
+  <div class = "col s12">
+    <button
+		 class = "btn black waves-effect"
+		 [disabled]="!data"
+		 (click)="onAdd()">Add
+		</button>
+		<button
+		 class = "btn black waves-effect"
+		 [disabled]="!data"
+		 (click)="data = ''">Clear
+		</button>
+		<button
+		 class = "btn black waves-effect"
+		 [disabled]="!todos.length"
+     (click)="todos=[]">Delete todos
+    </button>
+  </div>
+</div>
+
+<div class="row" *ngIf="todos.length !== 0">
+  <div class = "col s12">
+    <ul class = "collection">
+		<li
+       class = "collection-item"
+       *ngFor = "let todo of todos; let i = index">{{todo}}
+        <a class = "secondary-content" (click) = "onRemoveTodo(i)" href = "#!">
+         <fa name = "archive"></fa>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

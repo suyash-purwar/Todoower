@@ -1,0 +1,15 @@
+nav {
+  background-color: black;
+}
+
+nav > .nav-wrapper {
+  padding: 0px 10px;
+}
+
+.brand-logo {
+  font-family: Orbitron
+}
+
+fa {
+  font-size: 30px;
+ }
